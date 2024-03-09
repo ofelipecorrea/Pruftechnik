@@ -34,9 +34,7 @@ function App() {
               placeholder="Password"
               required
             ></input>
-            <a href="./display/recoveryPass/index.js">
-              <input type="submit" value="Acessar"></input>
-            </a>
+            <input type="submit" value="Acessar"></input>
           </form>
         </div>
       </div>
