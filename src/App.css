@@ -1,38 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+	--cor-amarelo: #FFC20E;
+	--cor-cinza: #333333;
+	--cor-cinza-claro: #C6C5CA;
+	--cor-branco: #ffffff;
+	--cor-preto: #000000;
+}
+
+
+body {
+	background-color: var(--cor-cinza);
+}
+
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.YellowBlock {
+	background-color: #FFC20E;
+	height: 20vh;
+	width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo img {
+	width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.LoginForm {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.FormLogin {
+	background-color: var(--cor-branco);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TitleLogin {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.FlagLanguage {
+	display: flex;
+	gap: 1rem;
+	width: 50px;
+	height: 35px;
+	justify-content: center;
+}
+
+.FlagLanguage img:hover {
+	width: 51px;
+	border: 1px solid var(--cor-preto);
+}
+
+.Form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.5rem 0;
+}
+
+.Form input {
+	margin: 0 2rem;
+	width: 428px;
+	height: 50px;
+	color: var(--cor-cinza);
+	border: 1px solid var(--cor-cinza-claro);
+	padding-left: 1rem;
+	border-radius: 4px;
+}
+
+.Form input[type=submit] {
+	width: 23vw;
+	height: 50px;
+	background-color: var(--cor-amarelo);
+}
+
+@media (max-width: 1000px) {
+	.logo img {
+		width: 200px;
+	}
+
+	.LoginForm {
+		flex-direction: column;
+	}
+
+	.Form input {
+		margin: 0 1rem;
+		width: 85vw;
+		height: 50px;
+	}
+
+	.Form input[type=submit] {
+		width: 90vw;
+	}
+
+	.App {
+		height: 100vh;
+	}
 }
