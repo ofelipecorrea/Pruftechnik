@@ -3,6 +3,7 @@ import Logo from "./elements/img/logo.png";
 import Bra from "./elements/img/Flag-of-Brazil-01-1.svg";
 import Eua from "./elements/img/America-01-1.svg";
 import Spa from "./elements/img/spain-country-flag-icon.svg";
+import { Children } from "react";
 
 
 function App() {
@@ -35,9 +36,8 @@ function App() {
               placeholder="Password"
               required
             ></input>
-            <a href="www.youtube.com.br" className="Anchor">
-              Acessar
-            </a>
+            <input type="button" value="Acessar" className="Anchor"
+            ></input>
           </form>
         </div>
       </div>
